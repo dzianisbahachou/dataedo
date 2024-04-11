@@ -1,0 +1,6 @@
+<button [disabled]="loading" (click)="getSecondTodo()">Get second Todo</button>
+
+<div *ngIf="todo">
+    <p>{{todo?.title}}</p>
+    <p>{{todo?.status}}</p>
+</div>
